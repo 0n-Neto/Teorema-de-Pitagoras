@@ -6,8 +6,22 @@ import math
 
 #-----------------------------= Master =----------------------------------------
 janela = Tk()
-janela.geometry("700x285")
 janela.title("Teorema de Pitágoras")
+
+largura = 700
+altura = 285
+
+largura_screen = janela.winfo_screenwidth()
+altura_screen = janela.winfo_screenheight()
+
+posx = largura_screen/2 - largura/2
+posy = altura_screen/2 - largura/2
+
+janela.geometry("%dx%d+%d+%d" % (largura, altura, posx, posy))
+janela.resizable(False, False)
+
+#------------------------------= BG =------------------------------------------------
+
 image2 = Image.open("formula-pitagoras.jpg")
 image1 = ImageTk.PhotoImage(image2)
 background_label = Label(janela, image=image1)
@@ -42,5 +56,5 @@ bt["command"] = partial(Pitagoras, bt)
 bt.place(x=12, y=245)
 
 #-----------------------------------------------------------------------------
-
 janela.mainloop() 
+#--------------------------------------------------------------------------------
