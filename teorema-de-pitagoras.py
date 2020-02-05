@@ -1,5 +1,5 @@
-from tkinter import *
-import tkinter as tk
+from tkinter import * #Criado Por Maurício P.(Shark)
+import tkinter as tk  #Coding: UTF-8
 from PIL import ImageTk, Image
 from functools import partial
 import math
@@ -22,7 +22,7 @@ janela.resizable(False, False)
 
 #------------------------------= BG =------------------------------------------------
 
-image2 = Image.open("formula-pitagoras.jpg")
+image2 = Image.open("formula-pitagoras.jpg")  #<---- Uma forma criativa de usar uma imagem como BackGround.
 image1 = ImageTk.PhotoImage(image2)
 background_label = Label(janela, image=image1)
 background_label.image1=image1
