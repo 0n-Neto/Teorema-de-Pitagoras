@@ -1,4 +1,4 @@
-from tkinter import * #Criado Por Maurício P.(Shark)
+from tkinter import * #Criado Por Maurício P.(n3tto0)
 import tkinter as tk  #Coding: UTF-8
 from PIL import ImageTk, Image
 from functools import partial
